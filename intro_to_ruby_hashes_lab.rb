@@ -29,18 +29,14 @@ def update_counting_hash(hash, key)
   # if the provided key is not present in the hash, add it and assign it to the value of 1
   # if the provided key is present, increment its value by 1
   
- if hash[key]
-   # Here you will check if the hash does not have the key instead of doing this
-  
- else
-    
-   return hash[key] +=1
-   # You should assign new value for the existing key first before returning its value 
- end
 
- # Finally, return your expected output here, the return keyword is not needed
+  if hash.key?(key)
+    hash[key] += 1 
+  else
+    hash[key] = 1
+  end
+  hash
 
-hash[key]
 
   
   
