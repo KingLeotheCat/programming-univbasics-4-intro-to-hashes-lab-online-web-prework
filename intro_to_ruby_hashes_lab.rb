@@ -30,7 +30,6 @@ def update_counting_hash(hash, key)
   # if the provided key is present, increment its value by 1
   
   
+  
 end
 
-my_hash_creator(book, "Harry Potter")
-#=> What returns{:book => "Harry Potter"}
