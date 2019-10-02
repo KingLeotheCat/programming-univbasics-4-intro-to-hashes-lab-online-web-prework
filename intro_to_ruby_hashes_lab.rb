@@ -25,7 +25,7 @@ end
 
 def read_from_hash(hash, key)
  if hash.key?(key)
-   return key
+   return hash[key]
  else
    return nil
  end
